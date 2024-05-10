@@ -2,21 +2,26 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" size="any" href="assets/img/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Home</title>
 </head>
 
 <body>
-    <header id="menu">  <!-- Adicione aqui as CLASSES -->
-        <div>                  <!-- Adicione aqui as CLASSES -->
+    <header id="menu" class="menu_container flex"> <!-- Adicione aqui as CLASSES -->
+        <div class="menu_content"> <!-- Adicione aqui as CLASSES -->
             <a href="#">Universe</a>
 
             <nav>
-                <ul>    <!-- Adicione aqui as CLASSES -->
+                <ul class="menu_lista flex"> <!-- Adicione aqui as CLASSES -->
                     <li><a href="#">Home</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contate Me</a></li>
@@ -26,29 +31,31 @@
     </header>
 
     <main>
-        <section id="home">  <!-- Adicione aqui as CLASSES -->
-            <article id="home-texto">  <!-- Adicione aqui as CLASSES -->
+        <section id="home" class="home_container"> <!-- Adicione aqui as CLASSES -->
+            <article id="home-texto" class="home_content"> <!-- Adicione aqui as CLASSES -->
                 <h4>Bem Vindo a um Novo Universo</h4>
                 <h1>Diferentes mundos para diferentes pessoas</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error veniam in voluptatem magni
                     quisquam</p>
 
-                <a target="_blank" href="https://github.com/conteudoGeneration/">    <!-- Adicione aqui as CLASSES -->
+                <a class="btn" target="_blank" href="https://github.com/conteudoGeneration/">
+                    <!-- Adicione aqui as CLASSES -->
                     Explore
                 </a>
             </article>
 
-            <article id="home-imagem"> <!-- Adicione aqui as CLASSES -->
-                <img src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">   <!-- Adicione aqui as CLASSES -->
+            <article id="home-imagem" class="home_content"> <!-- Adicione aqui as CLASSES -->
+                <img class="home_content_img" src="assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
+                <!-- Adicione aqui as CLASSES -->
             </article>
         </section>
 
         <!-- Adicione os dados do seu Github-->
-        <section id="sobre">    <!-- Adicione aqui as CLASSES -->
+        <section id="sobre" class="sobre_container"> <!-- Adicione aqui as CLASSES -->
             <img src="https://avatars.githubusercontent.com/u/62150036?v=4"
                 alt="Foto do Perfil do Github - Conteúdo Generation">
 
-            <article id="sobre-texto">  <!-- Adicione aqui as CLASSES -->
+            <article id="sobre-texto"> <!-- Adicione aqui as CLASSES -->
                 <h1>Quem sou eu?</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit voluptates incidunt
@@ -56,8 +63,9 @@
                     deleniti modi sit laudantium totam!
                 </p>
 
-                <div id="sobre-github">   <!-- Adicione aqui as CLASSES -->
-                    <a target="_blank" href="https://github.com/conteudoGeneration/">Github</a> <!-- Adicione aqui as CLASSES -->
+                <div id="sobre-github" class="sobre_github flex"> <!-- Adicione aqui as CLASSES -->
+                    <a class="btn" target="_blank" href="https://github.com/conteudoGeneration/">Github</a>
+                    <!-- Adicione aqui as CLASSES -->
                     <p>502 Seguidores</p>
                     <p>36 Repositórios</p>
                 </div>
@@ -65,26 +73,26 @@
             </article>
         </section>
 
-        <section id="contato">    <!-- Adicione aqui as CLASSES -->
-            <article id="contato-texto">    <!-- Adicione aqui as CLASSES -->
+        <section id="contato" class="contato_container"> <!-- Adicione aqui as CLASSES -->
+            <article id="contato-texto" class="contato_content"> <!-- Adicione aqui as CLASSES -->
                 <h4>Me Contate</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique esse fuga necessitatibus,
                     iusto alias eius perferendis qui iste minima blanditiis repellendus distinctio dolor obcaecati
                     aliquid quod quidem incidunt quibusdam!</p>
 
-                    <!-- Adicione os dados da suas Redes Sociais -->
-                <div id="redes-sociais">  <!-- Adicione aqui as CLASSES -->
+                <!-- Adicione os dados da suas Redes Sociais -->
+                <div id="redes-sociais" class="social_container flex"> <!-- Adicione aqui as CLASSES -->
                     <a href="">
-                        <img src="assets/img/linkedin.svg"
-                            alt="Logo do LinkedIn" />   <!-- Adicione aqui as CLASSES -->
+                        <img class="social_icon" src="assets/img/linkedin.svg" alt="Logo do LinkedIn" />
+                        <!-- Adicione aqui as CLASSES -->
                     </a>
                     <a href="">
-                        <img src="assets/img/github.svg"
-                            alt="Logo do Github" /> <!-- Adicione aqui as CLASSES -->
+                        <img class="social_icon" src="assets/img/github.svg" alt="Logo do Github" />
+                        <!-- Adicione aqui as CLASSES -->
                     </a>
                     <a href="">
-                        <img src="assets/img/instagram.svg"
-                            alt="Logo do Instagram" />  <!-- Adicione aqui as CLASSES -->
+                        <img class="social_icon" src="assets/img/instagram.svg" alt="Logo do Instagram" />
+                        <!-- Adicione aqui as CLASSES -->
                     </a>
                 </div>
             </article>
@@ -102,12 +110,12 @@
                 <label for="message">Mensagem: </label>
                 <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
 
-                <button type="submit">Enviar</button> <!-- Adicione aqui as CLASSES -->
+                <button class="btn" type="submit">Enviar</button> <!-- Adicione aqui as CLASSES -->
             </form>
         </section>
     </main>
 
-    <footer> <!-- Adicione aqui as CLASSES -->
+    <footer class="flex"> <!-- Adicione aqui as CLASSES -->
         Feito com 🧡 por Generation Brasil - 2024
     </footer>
 
